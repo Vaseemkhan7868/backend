@@ -4,6 +4,7 @@ import bcrypt from "bcrypt";
 import jwt from 'jsonwebtoken';
 
 
+
 export async function POST(req,res) {
 
     try {
@@ -22,7 +23,7 @@ export async function POST(req,res) {
         }, process.env.SECRET_KEY,{ 
             expiresIn:"30d" })
         // console.log("your token is ",token) 
-        
+    
 
         if(match){
             return NextResponse.json({message: "Login Successful" ,success:true,user ,token})

@@ -1,5 +1,7 @@
 'use client'
 import React, { useState } from 'react'
+import { setCookie ,getCookie } from "cookies-next";
+
 
 function page() {
     const [name, setName] = useState('')
@@ -21,6 +23,7 @@ function page() {
           if(data.success){
           console.log("Login is successfull")
           localStorage.setItem("token",data.token)
+          setCookie("jwt" ,data.token)
            setName('')
             setAge('')
           }else{
@@ -28,12 +31,10 @@ function page() {
           }
           // let v = localStorage.getItem("token")
           // console.log("the v " ,v)
-          // let tokens = data.token;
+          let token = data.token;
         //  console.log("the token ",tokens)
-       }
+             }
 
-      
-         
   return (
     <> <div className='p-8'>
     <h2>Login Page</h2> <br />
@@ -49,8 +50,12 @@ function page() {
   )
 }
 
+
+
 export default page
 
+export let token ;
 
-export let value = "hello";
+
+
 
