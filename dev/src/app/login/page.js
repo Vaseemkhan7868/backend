@@ -8,7 +8,7 @@ function page() {
 
     const registerUser = async(e) => {
         e.preventDefault();
-        let data = await fetch('/api/login' , {
+        let data = await fetch('https://backend-bice-iota.vercel.app/api/login' , {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
