@@ -12,9 +12,6 @@ export async function GET() {
   console.log({result:"success"})
    return NextResponse.json({msg:dat}) 
   
-
-  
-
  } catch (error) {
    console.log("connection is failled",error)
  }

@@ -27,4 +27,6 @@ export default function Home() {
 // git config user.name "Vaseemkhan7868"
 
 
-// npm install bcrypt pg // for instal 
+// npm install bcrypt pg // for install 
+
+// https://backend-bice-iota.vercel.app/

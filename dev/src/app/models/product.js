@@ -11,6 +11,7 @@ const productModels = new mongoose.Schema({
 
 
 
+
 // productModels.pre('save' , async function(next) {
    
 //     if(!this.isModified('age')){
@@ -24,8 +25,6 @@ const productModels = new mongoose.Schema({
 //         next(error)
 //     }
 // });
-
-
 
 
 
