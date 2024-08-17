@@ -50,11 +50,11 @@ function page() {
   )
 }
 
+ export let cc= getCookie ("jwt")
+// console.log("the cookie is " ,cc)
 
 
 export default page
-
-export let token ;
 
 
 
