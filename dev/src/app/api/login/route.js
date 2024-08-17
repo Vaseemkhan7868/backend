@@ -21,7 +21,7 @@ export async function POST(req,res) {
            name:user.name 
         }, process.env.SECRET_KEY,{ 
             expiresIn:"30d" })
-        console.log("your token is ",token)
+        // console.log("your token is ",token) 
         
 
 

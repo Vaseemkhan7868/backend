@@ -1,8 +1,11 @@
 'use client'
-import React from 'react'
+import React, { useEffect } from 'react'
 
 function page() {
-  return localStorage.removeItem("token" )
+  useEffect(() => {
+    return localStorage.removeItem("token")
+  },["token"])
+  
 }
 
 

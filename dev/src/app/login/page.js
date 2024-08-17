@@ -28,9 +28,12 @@ function page() {
           }
           // let v = localStorage.getItem("token")
           // console.log("the v " ,v)
+          // let tokens = data.token;
+        //  console.log("the token ",tokens)
        }
 
-       
+     
+         
   return (
     <> <div className='p-8'>
     <h2>Login Page</h2> <br />
@@ -47,3 +50,4 @@ function page() {
 }
 
 export default page
+
