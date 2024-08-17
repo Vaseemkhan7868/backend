@@ -51,3 +51,6 @@ function page() {
 
 export default page
 
+
+export let value = "hello";
+

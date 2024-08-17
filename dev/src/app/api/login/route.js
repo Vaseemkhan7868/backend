@@ -24,17 +24,13 @@ export async function POST(req,res) {
         // console.log("your token is ",token) 
         
 
-
         if(match){
-        
             return NextResponse.json({message: "Login Successful" ,success:true,user ,token})
             
         }else{
             return NextResponse.json({message:"password is wrong"})
         }
-
         
-
     
     } catch (error) {
         return NextResponse.json({message:error.message,success:false})
