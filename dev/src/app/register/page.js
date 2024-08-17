@@ -10,7 +10,7 @@ function page() {
    const registerUser = async(e) => {
     // console.log(name,age)
     e.preventDefault();
-    let data = await fetch('http://localhost:3000/api/db' , {
+    let data = await fetch('api/db' , {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

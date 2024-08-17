@@ -8,7 +8,7 @@ function page() {
 
     const registerUser = async(e) => {
         e.preventDefault();
-        let data = await fetch('http://localhost:3000/api/login' , {
+        let data = await fetch('/api/login' , {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
