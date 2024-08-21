@@ -4,11 +4,10 @@ import bcrypt from "bcrypt";
 import jwt from 'jsonwebtoken';
 
 
-
 export async function POST(req,res) {
 
     try {
-
+     let connection = await mongoose.connect("mongodb://localhost:27017")
         const {name,age} = await req.json()
         let user = await product.findOne({name:name})
         if(user == null){
